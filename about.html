@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Volkhov', serif;
+    }
+    .hero {
+      background: url('about-hero.jpg') center center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="Group 590.png" alt="" width="150" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <button class="btn btn-outline-warning me-2">Login</button>
+      <button class="btn btn-warning">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero text-center" style="color:white; background-image: url(gt1.png);">
+    <div class="container">
+      <h1 class="display-4 bold" style="color:white">About Us</h1>
+      <p  style="text-muted">We help you explore the world with unforgettable travel experiences.</p>
+    </div>
+  </section>
+  
+  
+
+<!-- About Content -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="image 3.png" alt="About Us" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h2 class="fw-bold">Our Story</h2>
+      <p class="text-muted">Founded in 2020, Jadoo is a global travel brand that helps explorers find the most inspiring and affordable adventures across the world. Our mission is to make travel simple, accessible, and unforgettable for everyone.</p>
+      <p class="text-muted">From curated packages to customizable experiences, we help you explore hidden gems and make lifelong memories.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title fw-bold">Our Mission</h3>
+          <p class="card-text text-muted">To inspire people to travel more by making trips easy, meaningful, and affordable through technology and personal service.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title fw-bold">Our Vision</h3>
+          <p class="card-text text-muted">To become the leading platform for unique travel experiences, connecting people with places in the most memorable ways.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional: Team Section -->
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-4">Meet the Team</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <img src="aysha.png" alt="Team Member" class="img-fluid  mb-2" style="width: 150px;">
+      <h5 class="mb-0">Ayesha Khan</h5>
+      <small class="text-muted">CEO & Founder</small>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="m1.jpg" alt="Team Member" class="img-fluid  mb-2" style="width: 150px;">
+      <h5 class="mb-0">James Walker</h5>
+      <small class="text-muted">CTO</small>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="images.jpeg" alt="Team Member" class="img-fluid  mb-2" style="width: 150px;">
+      <h5 class="mb-0">Maria Gomez</h5>
+      <small class="text-muted">Head of Marketing</small>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-4">
+  <div class="container text-center">
+    <img src="Group 590.png" alt="Logo" width="100" class="mb-3" />
+    <p class="text-muted">© 2025 Jadoo. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+    // When the page is fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log("Page loaded!");
+  
+      // Example: Handle click on 'About' nav link
+      const aboutLink = document.querySelector('a.nav-link.active');
+      if (aboutLink) {
+        aboutLink.addEventListener('click', function (e) {
+          e.preventDefault(); // prevent default navigation for demo
+          alert("You are already on the About page!");
+        });
+      }
+    });
+  </script>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
