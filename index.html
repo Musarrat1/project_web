@@ -256,7 +256,7 @@
       <div class="col">
         <h5 class="fw-bold">Company</h5>
         <ul class="list-unstyled text-muted mt-3">
-          <li><a href="about.html" style="outline-style: none;">About</a></li>
+          <li style="cursor: pointer;" onclick="window.location.href='about.html'">About</li>
           <li>Careers</li>
           <li>Mobile</li>
         </ul>
@@ -266,7 +266,7 @@
       <div class="col">
         <h5 class="fw-bold">Contact</h5>
         <ul class="list-unstyled text-muted mt-3">
-          <li>Help/FAQ</li>
+          <li style="cursor: pointer;" onclick="window.location.href='faq.html'">Help/FAQ</li>
           <li>Press</li>
           <li>Affiliates</li>
         </ul>
@@ -277,7 +277,7 @@
         <h5 class="fw-bold">More</h5>
         <ul class="list-unstyled text-muted mt-3">
           <li>Airline Fees</li>
-          <li>Airline</li>
+          <li style="cursor: pointer;" onclick="window.location.href='airline.html'">Airline</li>
           <li>Low Fare Tips</li>
         </ul>
       </div>
@@ -332,16 +332,14 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
 });
 
   
-  // Login and Sign Up buttons
-  document.querySelector('.btn-login').addEventListener('click', function () {
-    alert('Login button clicked! Redirecting to login page...');
-    // You can replace this with window.location.href = 'login.html';
-  });
-  
-  document.querySelector('.btn-sign').addEventListener('click', function () {
-    alert('Sign Up button clicked! Redirecting to sign-up page...');
-    // You can replace this with window.location.href = 'signup.html';
-  });
+document.querySelector('.btn-login').addEventListener('click', function () {
+  window.location.href = 'login.html';
+});
+
+document.querySelector('.btn-sign').addEventListener('click', function () {
+  window.location.href = 'signup.html';
+});
+
   
   // Subscribe form
   document.querySelector('.container input[type="text"]').addEventListener('keypress', function (e) {

@@ -28,14 +28,27 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="padding-left: 40px;">
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotel.html">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="flight.html">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bookings</a>
+        </li>
       </ul>
-      <button class="btn btn-outline-warning me-2">Login</button>
-      <button class="btn btn-warning">Sign Up</button>
+
+      <div class="d-flex">
+        <button class="btn btn-outline-warning me-2 btn-login" style="cursor: pointer;" onclick="window.location.href='login.html'">Login</button>
+        <button class="btn btn-warning btn-sign"style="cursor: pointer;" onclick="window.location.href='signup.html'">Sign Up</button>
+      </div>
+
     </div>
   </div>
 </nav>
@@ -44,7 +57,7 @@
 <section class="hero text-center" style="color:white; background-image: url(gt1.png);">
     <div class="container">
       <h1 class="display-4 bold" style="color:white">About Us</h1>
-      <p  style="text-muted">We help you explore the world with unforgettable travel experiences.</p>
+      <p  style="color: white;">We help you explore the world with unforgettable travel experiences.</p>
     </div>
   </section>
   
